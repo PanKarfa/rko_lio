@@ -1,0 +1,516 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classrko__lio_1_1core_1_1LIO" kind="class" language="C++" prot="public">
+    <compoundname>rko_lio::core::LIO</compoundname>
+    <includes refid="lio_8hpp" local="no">lio.hpp</includes>
+    <innerclass refid="structrko__lio_1_1core_1_1LIO_1_1Config" prot="public">rko_lio::core::LIO::Config</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrko__lio_1_1core_1_1LIO_1a1f4be69c50c49c4290265d8ad6058a66" prot="public" static="no" mutable="no">
+        <type><ref refid="structrko__lio_1_1core_1_1LIO_1_1Config" kindref="compound">Config</ref></type>
+        <definition>Config rko_lio::core::LIO::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <qualifiedname>rko_lio::core::LIO::config</qualifiedname>
+        <briefdescription>
+<para>Configuration parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="83" column="10" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrko__lio_1_1core_1_1LIO_1a004fb22ebae1428e23606e495eeea01a" prot="public" static="no" mutable="no">
+        <type><ref refid="structrko__lio_1_1core_1_1SparseVoxelGrid" kindref="compound">SparseVoxelGrid</ref></type>
+        <definition>SparseVoxelGrid rko_lio::core::LIO::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <qualifiedname>rko_lio::core::LIO::map</qualifiedname>
+        <briefdescription>
+<para>Local map as sparse voxel grid (Bonxai). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="86" column="19" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrko__lio_1_1core_1_1LIO_1a6b081409691284a8344fa25b573f0467" prot="public" static="no" mutable="no">
+        <type><ref refid="structrko__lio_1_1core_1_1State" kindref="compound">State</ref></type>
+        <definition>State rko_lio::core::LIO::lidar_state</definition>
+        <argsstring></argsstring>
+        <name>lidar_state</name>
+        <qualifiedname>rko_lio::core::LIO::lidar_state</qualifiedname>
+        <briefdescription>
+<para>Current LiDAR state estimate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="89" column="9" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrko__lio_1_1core_1_1LIO_1aedab30ea81941b951314113cd9d3166a" prot="public" static="no" mutable="no">
+        <type><ref refid="structrko__lio_1_1core_1_1ImuBias" kindref="compound">ImuBias</ref></type>
+        <definition>ImuBias rko_lio::core::LIO::imu_bias</definition>
+        <argsstring></argsstring>
+        <name>imu_bias</name>
+        <qualifiedname>rko_lio::core::LIO::imu_bias</qualifiedname>
+        <briefdescription>
+<para>IMU bias estimates when initialization is enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="92" column="11" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrko__lio_1_1core_1_1LIO_1aaec8a94ec4355ab7269bb02bee19d950" prot="public" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d rko_lio::core::LIO::mean_body_acceleration</definition>
+        <argsstring></argsstring>
+        <name>mean_body_acceleration</name>
+        <qualifiedname>rko_lio::core::LIO::mean_body_acceleration</qualifiedname>
+        <initializer>= Eigen::Vector3d::Zero()</initializer>
+        <briefdescription>
+<para>Mean body acceleration estimate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="95" column="19" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrko__lio_1_1core_1_1LIO_1a87238efc2008594d5fa9db8344084ec2" prot="public" static="no" mutable="no">
+        <type>Eigen::Matrix3d</type>
+        <definition>Eigen::Matrix3d rko_lio::core::LIO::body_acceleration_covariance</definition>
+        <argsstring></argsstring>
+        <name>body_acceleration_covariance</name>
+        <qualifiedname>rko_lio::core::LIO::body_acceleration_covariance</qualifiedname>
+        <initializer>= Eigen::Matrix3d::Identity()</initializer>
+        <briefdescription>
+<para>Covariance of body acceleration estimate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="98" column="19" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrko__lio_1_1core_1_1LIO_1a9b89efdfdcc0ab01ef3fd6caaadb69d2" prot="public" static="no" mutable="no">
+        <type><ref refid="structrko__lio_1_1core_1_1IntervalStats" kindref="compound">IntervalStats</ref></type>
+        <definition>IntervalStats rko_lio::core::LIO::interval_stats</definition>
+        <argsstring></argsstring>
+        <name>interval_stats</name>
+        <qualifiedname>rko_lio::core::LIO::interval_stats</qualifiedname>
+        <briefdescription>
+<para>IMU measurement statistics since last LiDAR frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="101" column="17" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrko__lio_1_1core_1_1LIO_1ae90f742f8a328a0ce2e119b2b8f881e1" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; Secondsd, Sophus::SE3d &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;Secondsd, Sophus::SE3d&gt; &gt; rko_lio::core::LIO::poses_with_timestamps</definition>
+        <argsstring></argsstring>
+        <name>poses_with_timestamps</name>
+        <qualifiedname>rko_lio::core::LIO::poses_with_timestamps</qualifiedname>
+        <briefdescription>
+<para>Sequence of registered scan poses with corresponding timestamps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="139" column="15" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrko__lio_1_1core_1_1LIO_1aa0e98c41c711dff7bf50bb1706b2d603" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rko_lio::core::LIO::_initialized</definition>
+        <argsstring></argsstring>
+        <name>_initialized</name>
+        <qualifiedname>rko_lio::core::LIO::_initialized</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>True if odometry initialization has been completed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="152" column="8" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrko__lio_1_1core_1_1LIO_1a838be30264dd19a556bd6cd134c88a31" prot="private" static="no" mutable="no">
+        <type>Sophus::SO3d</type>
+        <definition>Sophus::SO3d rko_lio::core::LIO::_imu_local_rotation</definition>
+        <argsstring></argsstring>
+        <name>_imu_local_rotation</name>
+        <qualifiedname>rko_lio::core::LIO::_imu_local_rotation</qualifiedname>
+        <briefdescription>
+<para>Latest IMU orientation used for gravity compensation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is ahead of the rotation in the state. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="155" column="16" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrko__lio_1_1core_1_1LIO_1ab754b7e1c345c2db0917e6b7bc471973" prot="private" static="no" mutable="no">
+        <type>Secondsd</type>
+        <definition>Secondsd rko_lio::core::LIO::_imu_local_rotation_time</definition>
+        <argsstring></argsstring>
+        <name>_imu_local_rotation_time</name>
+        <qualifiedname>rko_lio::core::LIO::_imu_local_rotation_time</qualifiedname>
+        <initializer>= Secondsd{0.0}</initializer>
+        <briefdescription>
+<para>Timestamp of the latest IMU orientation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Once a scan is registered, this is reset to the lidar state orientation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="159" column="12" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="159" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrko__lio_1_1core_1_1LIO_1a6cdf1482cca66e3eeeaf4f66e9cff018" prot="private" static="no" mutable="no">
+        <type>Secondsd</type>
+        <definition>Secondsd rko_lio::core::LIO::_last_real_imu_time</definition>
+        <argsstring></argsstring>
+        <name>_last_real_imu_time</name>
+        <qualifiedname>rko_lio::core::LIO::_last_real_imu_time</qualifiedname>
+        <initializer>= Secondsd{0.0}</initializer>
+        <briefdescription>
+<para>Timestamp of the most recent real IMU measurement. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="162" column="12" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="162" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrko__lio_1_1core_1_1LIO_1a8982a3577c4d1c77eb6a9fa2911c6149" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d rko_lio::core::LIO::_last_real_base_imu_ang_vel</definition>
+        <argsstring></argsstring>
+        <name>_last_real_base_imu_ang_vel</name>
+        <qualifiedname>rko_lio::core::LIO::_last_real_base_imu_ang_vel</qualifiedname>
+        <initializer>= Eigen::Vector3d::Zero()</initializer>
+        <briefdescription>
+<para>Angular velocity of last true IMU measurement expressed in base frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="165" column="19" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrko__lio_1_1core_1_1LIO_1a27bdff7e57866bd6429e81d8f7d74ed8" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>rko_lio::core::LIO::LIO</definition>
+        <argsstring>(const Config &amp;config_)</argsstring>
+        <name>LIO</name>
+        <qualifiedname>rko_lio::core::LIO::LIO</qualifiedname>
+        <param>
+          <type>const <ref refid="structrko__lio_1_1core_1_1LIO_1_1Config" kindref="compound">Config</ref> &amp;</type>
+          <declname>config_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="103" column="12" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="103" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classrko__lio_1_1core_1_1LIO_1a34139c65d35e7929125788bdafd0470c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rko_lio::core::LIO::add_imu_measurement</definition>
+        <argsstring>(const ImuControl &amp;base_imu)</argsstring>
+        <name>add_imu_measurement</name>
+        <qualifiedname>rko_lio::core::LIO::add_imu_measurement</qualifiedname>
+        <param>
+          <type>const <ref refid="structrko__lio_1_1core_1_1ImuControl" kindref="compound">ImuControl</ref> &amp;</type>
+          <declname>base_imu</declname>
+        </param>
+        <briefdescription>
+<para>Add an IMU measurement expressed in the base frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="107" column="8" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.cpp" bodystart="252" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classrko__lio_1_1core_1_1LIO_1a91736c1595c37bc5d70840538735b12a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rko_lio::core::LIO::add_imu_measurement</definition>
+        <argsstring>(const Sophus::SE3d &amp;extrinsic_imu2base, const ImuControl &amp;raw_imu)</argsstring>
+        <name>add_imu_measurement</name>
+        <qualifiedname>rko_lio::core::LIO::add_imu_measurement</qualifiedname>
+        <param>
+          <type>const Sophus::SE3d &amp;</type>
+          <declname>extrinsic_imu2base</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structrko__lio_1_1core_1_1ImuControl" kindref="compound">ImuControl</ref> &amp;</type>
+          <declname>raw_imu</declname>
+        </param>
+        <briefdescription>
+<para>Add an IMU measurement expressed in the IMU frame and transform it to the base frame using the given extrinsic calibration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>extrinsic_imu2base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Extrinsic transform from IMU to base frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>raw_imu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Raw IMU measurement. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="115" column="8" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.cpp" bodystart="291" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="classrko__lio_1_1core_1_1LIO_1a0e2818a3d7d3b07f77a91235b116b607" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector3dVector</type>
+        <definition>Vector3dVector rko_lio::core::LIO::register_scan</definition>
+        <argsstring>(const Vector3dVector &amp;scan, const TimestampVector &amp;timestamps)</argsstring>
+        <name>register_scan</name>
+        <qualifiedname>rko_lio::core::LIO::register_scan</qualifiedname>
+        <param>
+          <type>const Vector3dVector &amp;</type>
+          <declname>scan</declname>
+        </param>
+        <param>
+          <type>const TimestampVector &amp;</type>
+          <declname>timestamps</declname>
+        </param>
+        <briefdescription>
+<para>Register a LiDAR scan, applying deskewing based on the initial motion guess and clipping points beyond valid range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input raw point cloud. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timestamps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute timestamps corresponding to each scan point. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Deskewed and clipped point cloud. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="124" column="18" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.cpp" bodystart="337" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="classrko__lio_1_1core_1_1LIO_1a3963bf670eced93306c73ead313d867f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Vector3dVector</type>
+        <definition>Vector3dVector rko_lio::core::LIO::register_scan</definition>
+        <argsstring>(const Sophus::SE3d &amp;extrinsic_lidar2base, const Vector3dVector &amp;scan, const TimestampVector &amp;timestamps)</argsstring>
+        <name>register_scan</name>
+        <qualifiedname>rko_lio::core::LIO::register_scan</qualifiedname>
+        <param>
+          <type>const Sophus::SE3d &amp;</type>
+          <declname>extrinsic_lidar2base</declname>
+        </param>
+        <param>
+          <type>const Vector3dVector &amp;</type>
+          <declname>scan</declname>
+        </param>
+        <param>
+          <type>const TimestampVector &amp;</type>
+          <declname>timestamps</declname>
+        </param>
+        <briefdescription>
+<para>Register a LiDAR scan for which the extrinsic calibration from lidar to base has already been applied. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>extrinsic_lidar2base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Extrinsic from lidar to base frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input raw point cloud. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timestamps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Absolute timestamps corresponding to each scan point. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Deskewed and clipped scan in the original lidar frame. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="134" column="18" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.cpp" bodystart="429" bodyend="441"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrko__lio_1_1core_1_1LIO_1ab8728d90e80d1664ce979c8db5cc2eb2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rko_lio::core::LIO::initialize</definition>
+        <argsstring>(const Secondsd lidar_time)</argsstring>
+        <name>initialize</name>
+        <qualifiedname>rko_lio::core::LIO::initialize</qualifiedname>
+        <param>
+          <type>const Secondsd</type>
+          <declname>lidar_time</declname>
+        </param>
+        <briefdescription>
+<para>Initialize internal odometry state using the given lidar timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lidar_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current lidar timestamp. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="146" column="8" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.cpp" bodystart="177" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classrko__lio_1_1core_1_1LIO_1a5255f5fcedee204613c41705c263dec4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="structrko__lio_1_1core_1_1AccelInfo" kindref="compound">AccelInfo</ref> &gt;</type>
+        <definition>std::optional&lt; AccelInfo &gt; rko_lio::core::LIO::get_accel_info</definition>
+        <argsstring>(const Sophus::SO3d &amp;rotation_estimate, const Secondsd &amp;time)</argsstring>
+        <name>get_accel_info</name>
+        <qualifiedname>rko_lio::core::LIO::get_accel_info</qualifiedname>
+        <param>
+          <type>const Sophus::SO3d &amp;</type>
+          <declname>rotation_estimate</declname>
+        </param>
+        <param>
+          <type>const Secondsd &amp;</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>get the convenience struct with accel mag variance and local gravity estimate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="149" column="17" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.cpp" bodystart="212" bodyend="244"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Core LiDAR-inertial odometry algorithm class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>rko_lio::core::ImuBias</label>
+        <link refid="structrko__lio_1_1core_1_1ImuBias"/>
+      </node>
+      <node id="6">
+        <label>rko_lio::core::IntervalStats</label>
+        <link refid="structrko__lio_1_1core_1_1IntervalStats"/>
+      </node>
+      <node id="1">
+        <label>rko_lio::core::LIO</label>
+        <link refid="classrko__lio_1_1core_1_1LIO"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>config</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>map</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>lidar_state</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>imu_bias</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>interval_stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rko_lio::core::LIO::Config</label>
+        <link refid="structrko__lio_1_1core_1_1LIO_1_1Config"/>
+      </node>
+      <node id="3">
+        <label>rko_lio::core::SparseVoxelGrid</label>
+        <link refid="structrko__lio_1_1core_1_1SparseVoxelGrid"/>
+      </node>
+      <node id="4">
+        <label>rko_lio::core::State</label>
+        <link refid="structrko__lio_1_1core_1_1State"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" line="38" column="1" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/lio.hpp" bodystart="38" bodyend="166"/>
+    <listofallmembers>
+      <member refid="classrko__lio_1_1core_1_1LIO_1a838be30264dd19a556bd6cd134c88a31" prot="private" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>_imu_local_rotation</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1ab754b7e1c345c2db0917e6b7bc471973" prot="private" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>_imu_local_rotation_time</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1aa0e98c41c711dff7bf50bb1706b2d603" prot="private" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>_initialized</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1a8982a3577c4d1c77eb6a9fa2911c6149" prot="private" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>_last_real_base_imu_ang_vel</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1a6cdf1482cca66e3eeeaf4f66e9cff018" prot="private" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>_last_real_imu_time</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1a34139c65d35e7929125788bdafd0470c" prot="public" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>add_imu_measurement</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1a91736c1595c37bc5d70840538735b12a" prot="public" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>add_imu_measurement</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1a87238efc2008594d5fa9db8344084ec2" prot="public" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>body_acceleration_covariance</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1a1f4be69c50c49c4290265d8ad6058a66" prot="public" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>config</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1a5255f5fcedee204613c41705c263dec4" prot="private" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>get_accel_info</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1aedab30ea81941b951314113cd9d3166a" prot="public" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>imu_bias</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1ab8728d90e80d1664ce979c8db5cc2eb2" prot="private" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>initialize</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1a9b89efdfdcc0ab01ef3fd6caaadb69d2" prot="public" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>interval_stats</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1a6b081409691284a8344fa25b573f0467" prot="public" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>lidar_state</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1a27bdff7e57866bd6429e81d8f7d74ed8" prot="public" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>LIO</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1a004fb22ebae1428e23606e495eeea01a" prot="public" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>map</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1aaec8a94ec4355ab7269bb02bee19d950" prot="public" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>mean_body_acceleration</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1ae90f742f8a328a0ce2e119b2b8f881e1" prot="public" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>poses_with_timestamps</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1a0e2818a3d7d3b07f77a91235b116b607" prot="public" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>register_scan</name></member>
+      <member refid="classrko__lio_1_1core_1_1LIO_1a3963bf670eced93306c73ead313d867f" prot="public" virt="non-virtual"><scope>rko_lio::core::LIO</scope><name>register_scan</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

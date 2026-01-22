@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structrko__lio_1_1core_1_1TimestampProcessingConfig" kind="struct" language="C++" prot="public">
+    <compoundname>rko_lio::core::TimestampProcessingConfig</compoundname>
+    <includes refid="process__timestamps_8hpp" local="no">process_timestamps.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrko__lio_1_1core_1_1TimestampProcessingConfig_1a46cc425d4f72adff3fec06fda2ade916" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rko_lio::core::TimestampProcessingConfig::multiplier_to_seconds</definition>
+        <argsstring></argsstring>
+        <name>multiplier_to_seconds</name>
+        <qualifiedname>rko_lio::core::TimestampProcessingConfig::multiplier_to_seconds</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/process_timestamps.hpp" line="44" column="10" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/process_timestamps.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrko__lio_1_1core_1_1TimestampProcessingConfig_1a166b875f4043d2ad0be90aa46ab3c1f4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rko_lio::core::TimestampProcessingConfig::force_absolute</definition>
+        <argsstring></argsstring>
+        <name>force_absolute</name>
+        <qualifiedname>rko_lio::core::TimestampProcessingConfig::force_absolute</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/process_timestamps.hpp" line="45" column="8" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/process_timestamps.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrko__lio_1_1core_1_1TimestampProcessingConfig_1a1eb1124319b0987ff5960af828dedcfe" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rko_lio::core::TimestampProcessingConfig::force_relative</definition>
+        <argsstring></argsstring>
+        <name>force_relative</name>
+        <qualifiedname>rko_lio::core::TimestampProcessingConfig::force_relative</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/process_timestamps.hpp" line="46" column="8" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/process_timestamps.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Configuration struct for timestamp processing. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>There was an attempt to have a one-size-fits-all approach before, but that lead to increasingly complicated branching patterns. If the given defaults don&apos;t apply to your sensor for whatever reason, simply modify this config. </para>
+    </detaileddescription>
+    <location file="/home/runner/work/rko_lio/rko_lio/rko_lio/core/process_timestamps.hpp" line="43" column="1" bodyfile="/home/runner/work/rko_lio/rko_lio/rko_lio/core/process_timestamps.hpp" bodystart="43" bodyend="47"/>
+    <listofallmembers>
+      <member refid="structrko__lio_1_1core_1_1TimestampProcessingConfig_1a166b875f4043d2ad0be90aa46ab3c1f4" prot="public" virt="non-virtual"><scope>rko_lio::core::TimestampProcessingConfig</scope><name>force_absolute</name></member>
+      <member refid="structrko__lio_1_1core_1_1TimestampProcessingConfig_1a1eb1124319b0987ff5960af828dedcfe" prot="public" virt="non-virtual"><scope>rko_lio::core::TimestampProcessingConfig</scope><name>force_relative</name></member>
+      <member refid="structrko__lio_1_1core_1_1TimestampProcessingConfig_1a46cc425d4f72adff3fec06fda2ade916" prot="public" virt="non-virtual"><scope>rko_lio::core::TimestampProcessingConfig</scope><name>multiplier_to_seconds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
